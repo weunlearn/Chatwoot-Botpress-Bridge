@@ -31,8 +31,15 @@ Read more about [SAM Build here](https://docs.aws.amazon.com/serverless-applicat
 The `sam build` command is wrapped inside of the `Makefile`. To execute this simply run
  
 ```shell
-make
+S3_BUCKET=test-bucket-name STACK_NAME=botpress-bridge-test make build
 ```
+
+To deploy build, package and deploy the function in one command, run
+
+```shell
+S3_BUCKET=test-bucket-name STACK_NAME=botpress-bridge-test make clean install lambda build package deploy
+```
+
 
 ### Local development
 

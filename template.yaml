@@ -28,8 +28,8 @@ Resources:
             Method: POST
       Environment:
         Variables:
-          chatwootBotToken: ***REMOVED*** # For more information on how to obtain this token: https://github.com/chatwoot/rasa-agent-bot-demo
-          customTerminology: ***REMOVED*** # Create an AWS Terminology add the name here.
+          chatwootBotToken: YqMzk2pttyDZ3Y5ZNdsLEDcP # For more information on how to obtain this token: https://github.com/chatwoot/rasa-agent-bot-demo
+          customTerminology: cherry_blossom # Create an AWS Terminology add the name here.
       Policies:
         - Statement:
             - Sid: AWSTranslatePermissions
