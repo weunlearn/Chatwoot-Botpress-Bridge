@@ -17,11 +17,11 @@ import (
 
 var (
 	// BotURL URL for Botpress Installation
-	BotURL = ""
+	BotURL = "https://botpress.weunlearn.org"
 	// BotId Bot Id from Botpress installation
-	BotId = ""
+	BotId = "wulu"
 	// ChatwootURL URL for Chatwoot installation
-	ChatwootURL = ""
+	ChatwootURL = "https://chatwoot.weunlearn.org"
 	// ChatwootBotToken Chatwoot Bot token from database
 	ChatwootBotToken = os.Getenv("chatwootBotToken")
 	// CustomTerminology AWS Translate Custom Terminology name
@@ -265,7 +265,7 @@ func SendToChatwoot(conversationId int, response Response, customAttributes Cust
 func SendPostAsync(body *http.Request, rc chan *http.Response) {
 	resp, err := http.DefaultClient.Do(body)
 	if err != nil {
-		log.Fatalln("Oh nooooo")
+		log.Fatalf("Oh nooooo %v", err)
 	}
 	rc <- resp
 }

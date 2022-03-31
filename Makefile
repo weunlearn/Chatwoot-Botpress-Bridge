@@ -14,7 +14,7 @@ clean:
 
 .PHONY: install
 install:
-	cd bridge && go get ./...
+	go get ./...
 
 main: ./bridge/main.go
 	go build -o $(OUTPUT) ./bridge/main.go
