@@ -17,11 +17,11 @@ import (
 
 var (
 	// BotURL URL for Botpress Installation
-	BotURL = "https://botpress.weunlearn.org"
+	BotURL = ""
 	// BotId Bot Id from Botpress installation
-	BotId = "wulu"
+	BotId = ""
 	// ChatwootURL URL for Chatwoot installation
-	ChatwootURL = "https://chatwoot.weunlearn.org"
+	ChatwootURL = ""
 	// ChatwootBotToken Chatwoot Bot token from database
 	ChatwootBotToken = os.Getenv("chatwootBotToken")
 	// CustomTerminology AWS Translate Custom Terminology name
